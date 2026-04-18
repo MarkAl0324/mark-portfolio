@@ -15,9 +15,12 @@ function Hero() {
           </div>
           <h1 className="display">
             <span className="hero-line" style={{ animationDelay: "0.05s" }}>
-              I find the <em>inefficiency.</em>
+              Mark <em>Alejandro.</em>
             </span>
-            <span className="hero-line" style={{ animationDelay: "0.25s" }}>
+            <span className="hero-line" style={{ animationDelay: "0.2s", fontSize: "0.68em", color: "var(--ink-soft)", marginTop: "0.2em" }}>
+              I find the <em style={{ color: "var(--ink-soft)" }}>inefficiency.</em>
+            </span>
+            <span className="hero-line" style={{ animationDelay: "0.35s", fontSize: "0.68em", color: "var(--ink-soft)" }}>
               I build the <span className="script">fix.</span>
             </span>
           </h1>
