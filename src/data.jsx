@@ -1,0 +1,240 @@
+// Portfolio content — Mark Al S. Alejandro (from resume, April 2026)
+const PORTFOLIO = {
+  name: "Mark Al S. Alejandro",
+  role: "Operations & Automation Specialist",
+  focus: "AI · Web · Back-Office",
+  location: "Commonwealth, Quezon City · PH",
+  email: "markalejandro1115@gmail.com",
+  phone: "+63 945 459 3273",
+  timeZone: "UTC+8 · Asia / Manila",
+
+  taglineLines: [
+    { text: "I find the inefficiency.", italic: false },
+    { text: "I build the fix.", script: true },
+  ],
+
+  heroMeta: [
+    {
+      label: "What I do",
+      body: "I audit messy operations, then design AI-assisted automations and internal tools that turn manual work into repeatable systems — CRMs, workflows, dashboards, SOPs.",
+    },
+    {
+      label: "Currently",
+      body: "Business Development Specialist at MedsPLUS Consulting. Virtual Assistant for ImagineSD real estate. Open to selective freelance projects.",
+    },
+    {
+      label: "Tools I live in",
+      body: "Make · Zapier · n8n · HubSpot · Follow Up Boss · Base44 · Claude · ChatGPT · WordPress · Asana.",
+    },
+  ],
+
+  nowItems: [
+    {
+      tag: "Now",
+      title: "Leading MedsPLUS Connect — internal clinical webapp",
+      body: "React + Supabase app centralizing prescription tracking, GLP-1 workflows, and patient management. Continuing to refine authentication, role-based access, and internal messaging modules.",
+    },
+    {
+      tag: "Now",
+      title: "Running the ImagineSD CRM Dashboard on Base44",
+      body: "Custom internal dashboard I architected to replace a fragmented tool stack. Consolidates lead, client, and transaction tracking for a San Diego real estate team.",
+    },
+    {
+      tag: "Building",
+      title: "AIRA — a personal AI assistant framework",
+      body: "A modular skill framework covering content support, transaction coordination, meeting prep, and tracking. Refining system prompts and context handling for real day-to-day use.",
+    },
+    {
+      tag: "Learning",
+      title: "AI agents for real estate transaction coordination",
+      body: "Designing Claude-based prompting to monitor transaction status, surface missing items, and improve deadline visibility across active files.",
+    },
+  ],
+
+  projects: [
+    {
+      num: "01",
+      featured: true,
+      title: "MedsPLUS Connect",
+      titleEm: "· internal clinical webapp",
+      year: "2024 — Now",
+      type: "Case study",
+      stack: ["React", "Supabase", "HubSpot"],
+      desc: "A React + Supabase webapp that centralizes pharmacy workflows, GLP-1 program tracking, genomics data, and patient management for a healthcare consultancy.",
+      previewLabel: "Internal webapp",
+      image: "images/medsplus-command-center.png",
+      gallery: [
+        { src: "images/medsplus-command-center.png", caption: "Command Center — overview of pharmacy, GLP-1, genomics, and education modules" },
+        { src: "images/medsplus-pharmacy.png", caption: "Pharmacy Dashboard — prescription status, cost avoidance, refill distribution" },
+      ],
+      caseStudy: {
+        problem: "MedsPLUS Consulting was running prescription tracking, GLP-1 program workflows, and patient records across disconnected spreadsheets and tools, making day-to-day coordination slow and error-prone.",
+        approach: [
+          "Led design and ongoing refinement of MedsPLUS Connect to centralize workflows in a single internal system",
+          "Built out authentication, role-based access, patient and pharmacy records, and internal messaging as core modules",
+          "Paired the app with Make and Zapier automations to reduce manual intake handling and speed up response time",
+        ],
+        outcome: [
+          "Single source of truth for prescription, GLP-1, and patient data across the team",
+          "Reduced manual data handling in intake-related workflows",
+          "Clearer operational visibility across patient, workflow, and program-related activities",
+        ],
+        metrics: [
+          { num: "1", label: "Unified system" },
+          { num: "4+", label: "Workflows centralized" },
+        ],
+      },
+    },
+    {
+      num: "02",
+      featured: true,
+      title: "ImagineSD CRM Dashboard",
+      titleEm: "· a Base44 rebuild",
+      year: "2024 — Now",
+      type: "Case study",
+      stack: ["Base44", "Follow Up Boss", "Luxury Presence"],
+      desc: "A custom internal CRM dashboard for a San Diego real estate team, replacing a fragmented stack with one place for lead, client, and transaction tracking.",
+      previewLabel: "CRM dashboard",
+      image: "images/imaginesd-pipelines.png",
+      gallery: [
+        { src: "images/imaginesd-pipelines.png", caption: "Pipelines — lead stages from New Lead through Offer Submitted" },
+        { src: "images/imaginesd-hub.png", caption: "Transaction Management hub — central home for active files" },
+        { src: "images/imaginesd-documents.png", caption: "Documents — deadline, phase, and status tracking per transaction" },
+      ],
+      caseStudy: {
+        problem: "The ImagineSD team was juggling Luxury Presence, SIDE Okta, Follow Up Boss, and other tools with no single view of leads, clients, or transactions — handoffs leaked and follow-up discipline was hard to maintain.",
+        approach: [
+          "Architected and built a custom dashboard on Base44 tailored to the team's lead and transaction workflow",
+          "Migrated lead-management practices into cleaner Follow Up Boss routines, with training and reinforcement",
+          "Layered in CRM activity reviews and workflow automations to reduce process friction",
+        ],
+        outcome: [
+          "Replaced a fragmented tool stack with one internal system",
+          "Cleaner follow-up processes and improved lead-management discipline across the team",
+          "Day-to-day visibility into leads, clients, and transactions in a single pane",
+        ],
+        metrics: [
+          { num: "4→1", label: "Tools consolidated" },
+          { num: "1", label: "Source of truth" },
+        ],
+      },
+    },
+    {
+      num: "03",
+      featured: false,
+      title: "AI Real Estate Transaction Coordination Agent",
+      titleEm: "",
+      year: "2025",
+      type: "AI workflow",
+      stack: ["Claude", "Prompt design", "Follow Up Boss"],
+      desc: "A Claude-based prompting system that monitors transaction status, surfaces missing items, and nudges deadlines across active real-estate files.",
+      image: "images/imaginesd-documents.png",
+    },
+    {
+      num: "04",
+      featured: false,
+      title: "AIRA — AI Virtual Assistant",
+      titleEm: "",
+      year: "2025",
+      type: "AI system",
+      stack: ["Claude", "ChatGPT", "Notion AI"],
+      desc: "A personal AI assistant framework for task prioritization, communication drafts, and operational support across multiple client contexts.",
+      image: "images/aira-skill.png",
+    },
+    {
+      num: "05",
+      featured: false,
+      title: "MedsPLUS website rebuild",
+      titleEm: "",
+      year: "2024",
+      type: "Web + SEO",
+      stack: ["WordPress", "Analytics", "SEMrush"],
+      desc: "Rebuilt and optimized the MedsPLUS site for usability, session quality, and lead form performance — supporting engagement and positioning.",
+      image: "images/medsplus-website.png",
+    },
+  ],
+
+  skills: [
+    {
+      heading: "Automation & AI",
+      lead: "Stitch the dull parts together. Keep the judgment with humans.",
+      items: [
+        { name: "Make · Zapier · n8n", level: "Daily" },
+        { name: "Claude · ChatGPT · Notion AI", level: "Daily" },
+        { name: "Prompt engineering", level: "Daily" },
+        { name: "Workflow design", level: "Daily" },
+        { name: "Basic API & integration logic", level: "Often" },
+      ],
+    },
+    {
+      heading: "Web, CRM & Internal Tools",
+      lead: "Lightweight front-ends so automation is visible, not a black box.",
+      items: [
+        { name: "HubSpot · Follow Up Boss", level: "Daily" },
+        { name: "Base44 · Internal dashboards", level: "Daily" },
+        { name: "WordPress · SEO", level: "Often" },
+        { name: "SIDE Okta · Radius Agent", level: "Often" },
+        { name: "Google Analytics · SEMrush", level: "Sometimes" },
+      ],
+    },
+    {
+      heading: "Ops & Back-Office",
+      lead: "SOPs that stick, projects that ship, inboxes that close.",
+      items: [
+        { name: "SOP documentation", level: "Daily" },
+        { name: "Asana · Monday · Trello · Notion", level: "Daily" },
+        { name: "Executive / admin support", level: "Daily" },
+        { name: "Canva · Figma · Loom · Premiere", level: "Often" },
+        { name: "Google Workspace · Slack · Zoom", level: "Daily" },
+      ],
+    },
+  ],
+
+  experience: [
+    {
+      when: "Jun 2023 — Now",
+      role: "Business Development Specialist",
+      at: "MedsPLUS Consulting",
+      body: "Drive workflow improvement across CRM, marketing, automation, and internal operations to reduce manual work and improve day-to-day execution for a healthcare consultancy.",
+      bullets: [
+        "Managed HubSpot workflows, lead pipelines, and follow-up processes to strengthen handoffs",
+        "Led development and refinement of MedsPLUS Connect — an internal webapp centralizing prescription tracking, GLP-1 workflows, and patient management",
+        "Built Make and Zapier automations to reduce manual intake handling and speed up response time",
+        "Rebuilt and optimized the company website for usability, session quality, and lead form performance",
+        "Documented workflows and managed Asana boards to keep priorities and ownership clear",
+      ],
+    },
+    {
+      when: "Oct 2023 — Now",
+      role: "Virtual Assistant",
+      at: "ImagineSD",
+      body: "Support operations, CRM coordination, marketing execution, and process improvement for a real-estate business running multiple active workflows.",
+      bullets: [
+        "Designed and deployed a custom internal dashboard on Base44, consolidating lead management, client records, and transaction tracking",
+        "Improved Follow Up Boss usage through training and reinforcement of lead-management discipline",
+        "Created and published marketing materials, and maintained website content and SEO updates",
+        "Worked across Luxury Presence, SIDE Okta, Follow Up Boss, and related real-estate tools",
+      ],
+    },
+    {
+      when: "Jan 2022 — Apr 2023",
+      role: "Chief Operations Officer",
+      at: "De Cuero Bueno · leather bag brand",
+      body: "Co-founded the business and helped establish its early operating structure, internal coordination, and day-to-day execution.",
+      bullets: [
+        "Oversaw core operations across fulfillment, coordination, and process execution",
+        "Supported planning and implementation of growth-related initiatives",
+        "Contributed to brand-building decisions, workflow improvements, and expansion efforts",
+      ],
+    },
+    {
+      when: "2019 — 2023",
+      role: "BS Management",
+      at: "Ateneo de Manila University",
+      body: "Studied management fundamentals — strategy, operations, and the systems thinking behind how businesses actually run.",
+      bullets: [],
+    },
+  ],
+};
+
+window.PORTFOLIO = PORTFOLIO;
