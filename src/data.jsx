@@ -221,6 +221,14 @@ const PORTFOLIO = {
         proves: "Brand-faithful event promo",
       },
       {
+        slug: "imaginesd-neighborhoods",
+        title: "Neighborhood spotlight",
+        brand: "Imagine SD",
+        format: "9:16",
+        duration: "0:20",
+        proves: "Photo-led edit with animated captions",
+      },
+      {
         slug: "cashflow-where-it-goes",
         title: "Where it goes",
         brand: "CashFLOW",
