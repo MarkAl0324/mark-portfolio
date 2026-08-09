@@ -404,7 +404,7 @@ function ExperienceSection() {
     <section id="experience">
       <div className="container">
         <SectionHead
-          num="— 04"
+          num="— 05"
           kicker="Full résumé"
           title="Where I've been,"
           titleEm="in order"
