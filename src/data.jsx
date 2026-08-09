@@ -36,13 +36,13 @@ const PORTFOLIO = {
     },
     {
       tag: "Now",
-      title: "Running the ImagineSD CRM Dashboard on Base44",
-      body: "Custom internal dashboard I architected to replace a fragmented tool stack. Consolidates lead, client, and transaction tracking for a San Diego real estate team.",
+      title: "Coordinating live transactions for ImagineSD",
+      body: "Daily transaction coordination for a San Diego brokerage — deadlines, disclosures, and document flow from contract to close, on the CRM dashboard I built for the team.",
     },
     {
       tag: "Building",
-      title: "AIRA — a personal AI assistant framework",
-      body: "A modular skill framework covering content support, transaction coordination, meeting prep, and tracking. Refining system prompts and context handling for real day-to-day use.",
+      title: "A code-driven pipeline for short-form video",
+      body: "React components rendered frame by frame to MP4, sharing brand tokens with the static work. One source ships every aspect ratio, and a re-cut is a change to a data file.",
     },
     {
       tag: "Learning",
