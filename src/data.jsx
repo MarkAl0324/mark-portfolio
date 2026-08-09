@@ -330,10 +330,11 @@ const PORTFOLIO = {
   experience: [
     {
       when: "Aug 2026 — Now",
-      role: "Social Media & Brand Video",
+      role: "Product, Social & Brand Video",
       at: "MedsPLUS Consulting",
-      body: "Continuing engagement following the business development role. Own the social design system and the brand video built on top of it.",
+      body: "Continuing engagement following the business development role. Own MedsPLUS Connect alongside the social design system and the brand video built on top of it.",
       bullets: [
+        "Continue leading MedsPLUS Connect, the internal clinical webapp",
         "Built a six-template pubmat system so a new post is a slot swap, not a new design",
         "Extended the system into short-form video rendered from code, in the same brand tokens",
         "Write captions and schedule against the monthly content calendar and awareness anchors",
