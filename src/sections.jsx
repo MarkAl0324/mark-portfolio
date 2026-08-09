@@ -319,7 +319,13 @@ function ReelsSection() {
         </Reveal>
         <div className="reels-grid" ref={wrapRef}>
           {R.items.map((r, i) => (
-            <Reveal key={r.slug} delay={i * 70}>
+            /* The span class goes on the Reveal wrapper, not the card — Reveal is the
+               actual grid child, so grid-column on anything inside it is ignored. */
+            <Reveal
+              key={r.slug}
+              delay={i * 70}
+              className={`reel-cell ${r.format === "16:9" ? "wide" : ""}`}
+            >
               <a
                 className={`reel-card ${r.format === "16:9" ? "wide" : ""}`}
                 href={`${R.siteUrl}/reel/${r.slug}/`}
