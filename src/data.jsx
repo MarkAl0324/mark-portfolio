@@ -20,7 +20,7 @@ const PORTFOLIO = {
     },
     {
       label: "Currently",
-      body: "Business Development Specialist at MedsPLUS Consulting. Virtual Assistant for ImagineSD real estate. Open to selective freelance projects.",
+      body: "Social media and brand video for MedsPLUS Consulting. Transaction coordination for ImagineSD real estate. Open to selective freelance projects.",
     },
     {
       label: "Tools I live in",
