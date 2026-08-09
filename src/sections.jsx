@@ -415,7 +415,7 @@ function ExperienceSection() {
     <section id="experience">
       <div className="container">
         <SectionHead
-          num="— 05"
+          num={reelsLive() ? "— 05" : "— 04"}
           kicker="Full résumé"
           title="Where I've been,"
           titleEm="in order"
