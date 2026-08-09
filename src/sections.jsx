@@ -371,7 +371,7 @@ function SkillsSection() {
     <section id="skills" className="skills">
       <div className="container">
         <SectionHead
-          num="— 03"
+          num="— 04"
           kicker="Toolkit"
           title="The tools —"
           titleEm="pick them up, put them down"
