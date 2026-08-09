@@ -1,7 +1,7 @@
-// Portfolio content — Mark Al S. Alejandro (from resume, April 2026)
+// Portfolio content — Mark Al S. Alejandro (from resume, July 2026)
 const PORTFOLIO = {
   name: "Mark Al S. Alejandro",
-  role: "Operations & Automation Specialist",
+  role: "Operations Integrator",
   focus: "AI · Web · Back-Office",
   location: "Commonwealth, Quezon City · PH",
   email: "markalejandro1115@gmail.com",
