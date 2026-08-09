@@ -31,8 +31,8 @@ const PORTFOLIO = {
   nowItems: [
     {
       tag: "Now",
-      title: "Running social + brand video for MedsPLUS Consulting",
-      body: "A six-template design system for their social channels, now extended into short-form video rendered from code — so a weekly post is a data change rather than a rebuild.",
+      title: "Product, social + brand video for MedsPLUS Consulting",
+      body: "Leading MedsPLUS Connect, plus a six-template design system for their social channels now extended into short-form video rendered from code — so a weekly post is a data change rather than a rebuild.",
     },
     {
       tag: "Now",
