@@ -191,6 +191,51 @@ const PORTFOLIO = {
     },
   ],
 
+  // Short-form video. Files live in mark-reels-site — absolute URLs on purpose, so no
+  // video binaries ever enter this repo.
+  reels: {
+    kicker: "Short-form video",
+    title: "Reels —",
+    titleEm: "brand video, built in code",
+    blurb:
+      "Client reels produced in Remotion: React components rendered frame by frame to MP4. The same brand tokens drive the video and the page it sits on.",
+    siteUrl: "https://mark-reels.vercel.app",
+    items: [
+      {
+        slug: "medsplus-template-system",
+        title: "Six templates, one system",
+        brand: "MedsPLUS",
+        format: "9:16",
+        duration: "0:24",
+        proves: "Published campaign output at volume",
+      },
+      {
+        slug: "medsplus-wellness-friday",
+        title: "Wellness Friday — event teaser",
+        brand: "MedsPLUS × LIV",
+        format: "9:16",
+        duration: "0:12",
+        proves: "Brand-faithful event promo",
+      },
+      {
+        slug: "cashflow-where-it-goes",
+        title: "Where it goes",
+        brand: "CashFLOW",
+        format: "9:16",
+        duration: "0:20",
+        proves: "Motion-graphics data visualisation",
+      },
+      {
+        slug: "self-three-ratios",
+        title: "One component, three formats",
+        brand: "Process",
+        format: "16:9",
+        duration: "0:20",
+        proves: "How the rest of the work gets made",
+      },
+    ],
+  },
+
   experience: [
     {
       when: "Aug 2026 — Now",
