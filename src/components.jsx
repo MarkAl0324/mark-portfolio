@@ -2,6 +2,17 @@
 
 const { useState, useEffect, useRef, useCallback } = React;
 
+/**
+ * The Reels section only exists once mark-reels-site is deployed and
+ * PORTFOLIO.reels.siteUrl is filled in. Until then the section, its nav link, and its
+ * slot in the section numbering all drop out together — so the page never shows a
+ * dead anchor or a gap in the 01/02/03 sequence.
+ */
+function reelsLive() {
+  const r = window.PORTFOLIO && window.PORTFOLIO.reels;
+  return Boolean(r && r.siteUrl);
+}
+
 // Reveal-on-scroll wrapper
 function Reveal({ children, delay = 0, as: As = "div", className = "", ...rest }) {
   const ref = useRef(null);
