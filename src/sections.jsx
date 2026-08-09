@@ -254,9 +254,11 @@ function ProjectsSection() {
 function ReelsSection() {
   const P = window.PORTFOLIO;
   const R = P.reels;
+  const live = Boolean(R && R.siteUrl);
   const wrapRef = uR(null);
 
   uE(() => {
+    if (!live) return;
     const root = wrapRef.current;
     if (!root) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
