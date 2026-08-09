@@ -55,7 +55,7 @@ function Nav({ onToggleTweaks }) {
       <div className="nav-links">
         <a href="#now">Now</a>
         <a href="#work">Work</a>
-        <a href="#reels">Reels</a>
+        {reelsLive() && <a href="#reels">Reels</a>}
         <a href="#skills">Toolkit</a>
         <a href="#experience">CV</a>
         <a href="#contact" className="nav-cta">Start a project →</a>
