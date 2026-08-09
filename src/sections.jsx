@@ -382,7 +382,7 @@ function SkillsSection() {
     <section id="skills" className="skills">
       <div className="container">
         <SectionHead
-          num="— 04"
+          num={reelsLive() ? "— 04" : "— 03"}
           kicker="Toolkit"
           title="The tools —"
           titleEm="pick them up, put them down"
