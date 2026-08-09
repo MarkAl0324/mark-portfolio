@@ -247,6 +247,123 @@ function ProjectsSection() {
   );
 }
 
+// ---------------- REELS ----------------
+// Video files are served from mark-reels-site, so nothing binary lands in this repo.
+// One IntersectionObserver keeps at most a single clip decoding at a time, and
+// prefers-reduced-motion turns autoplay off entirely (posters only).
+function ReelsSection() {
+  const P = window.PORTFOLIO;
+  const R = P.reels;
+  const wrapRef = uR(null);
+
+  uE(() => {
+    const root = wrapRef.current;
+    if (!root) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const videos = Array.from(root.querySelectorAll("video"));
+    if (!videos.length) return;
+
+    let active = null;
+    const ratios = new Map();
+
+    const setActive = (next) => {
+      if (next === active) return;
+      if (active) {
+        active.pause();
+        active.currentTime = 0;
+      }
+      active = next;
+      if (active) active.play().catch(() => {});
+    };
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => ratios.set(e.target, e.intersectionRatio));
+        let best = null;
+        let bestRatio = 0.5;
+        ratios.forEach((ratio, video) => {
+          if (ratio > bestRatio) {
+            best = video;
+            bestRatio = ratio;
+          }
+        });
+        setActive(best);
+      },
+      { threshold: [0, 0.25, 0.5, 0.8, 1] }
+    );
+
+    videos.forEach((v) => io.observe(v));
+
+    const onHide = () => document.hidden && setActive(null);
+    document.addEventListener("visibilitychange", onHide);
+
+    return () => {
+      io.disconnect();
+      document.removeEventListener("visibilitychange", onHide);
+      setActive(null);
+    };
+  }, []);
+
+  return (
+    <section id="reels" className="reels">
+      <div className="container">
+        <SectionHead
+          num="— 03"
+          kicker={R.kicker}
+          title={R.title}
+          titleEm={R.titleEm}
+        />
+        <Reveal>
+          <p className="reels-blurb">{R.blurb}</p>
+        </Reveal>
+        <div className="reels-grid" ref={wrapRef}>
+          {R.items.map((r, i) => (
+            <Reveal key={r.slug} delay={i * 70}>
+              <a
+                className={`reel-card ${r.format === "16:9" ? "wide" : ""}`}
+                href={`${R.siteUrl}/reel/${r.slug}/`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="reel-frame">
+                  <video
+                    src={`${R.siteUrl}/v/${r.slug}.v1.mp4`}
+                    poster={`${R.siteUrl}/v/${r.slug}.v1.jpg`}
+                    muted
+                    loop
+                    playsInline
+                    preload="none"
+                    aria-label={`${r.title} — ${r.brand}, ${r.duration}`}
+                  />
+                  <span className="reel-dur">{r.duration}</span>
+                </div>
+                <h3>{r.title}</h3>
+                <div className="reel-meta">
+                  <span>{r.brand}</span>
+                  <span className="bullet" />
+                  <span>{r.format}</span>
+                </div>
+                <p className="reel-proves">{r.proves}</p>
+              </a>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal>
+          <a
+            className="reels-all"
+            href={R.siteUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            See all reel work →
+          </a>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 // ---------------- SKILLS ----------------
 function SkillsSection() {
   const P = window.PORTFOLIO;
