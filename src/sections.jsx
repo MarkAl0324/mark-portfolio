@@ -472,5 +472,5 @@ function ContactSection() {
 }
 
 Object.assign(window, {
-  Hero, Ribbon, NowSection, ProjectsSection, SkillsSection, ExperienceSection, ContactSection,
+  Hero, Ribbon, NowSection, ProjectsSection, ReelsSection, SkillsSection, ExperienceSection, ContactSection,
 });
