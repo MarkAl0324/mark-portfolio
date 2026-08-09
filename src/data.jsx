@@ -193,10 +193,21 @@ const PORTFOLIO = {
 
   experience: [
     {
-      when: "Jun 2023 — Now",
+      when: "Aug 2026 — Now",
+      role: "Social Media & Brand Video",
+      at: "MedsPLUS Consulting",
+      body: "Continuing engagement following the business development role. Own the social design system and the brand video built on top of it.",
+      bullets: [
+        "Built a six-template pubmat system so a new post is a slot swap, not a new design",
+        "Extended the system into short-form video rendered from code, in the same brand tokens",
+        "Write captions and schedule against the monthly content calendar and awareness anchors",
+      ],
+    },
+    {
+      when: "Jun 2023 — Jul 2026",
       role: "Business Development Specialist",
       at: "MedsPLUS Consulting",
-      body: "Drive workflow improvement across CRM, marketing, automation, and internal operations to reduce manual work and improve day-to-day execution for a healthcare consultancy.",
+      body: "Drove workflow improvement across CRM, marketing, automation, and internal operations to reduce manual work and improve day-to-day execution for a healthcare consultancy.",
       bullets: [
         "Managed HubSpot workflows, lead pipelines, and follow-up processes to strengthen handoffs",
         "Led development and refinement of MedsPLUS Connect — an internal webapp centralizing prescription tracking, GLP-1 workflows, and patient management",
