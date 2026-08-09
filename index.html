@@ -663,8 +663,9 @@ section { padding: 112px 0; position: relative; }
   object-fit: cover; display: block;
 }
 /* The 16:9 piece spans two columns — a landscape tile in a 9:16 grid collapses to a
-   third the height of its neighbours and the row reads as broken. */
-.reel-card.wide { grid-column: span 2; }
+   third the height of its neighbours and the row reads as broken. The span lives on
+   .reel-cell because Reveal wraps every card, so the wrapper is the grid child. */
+.reel-cell.wide { grid-column: span 2; }
 .reel-card.wide .reel-frame { aspect-ratio: 16 / 9; }
 .reel-dur {
   position: absolute; right: 8px; bottom: 8px;
