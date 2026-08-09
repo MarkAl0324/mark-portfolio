@@ -20,11 +20,11 @@ const PORTFOLIO = {
     },
     {
       label: "Currently",
-      body: "Social media and brand video for MedsPLUS Consulting. Transaction coordination for ImagineSD real estate. Open to selective freelance projects.",
+      body: "Product, social, and brand video for MedsPLUS Consulting. Daily transaction coordination for ImagineSD real estate. Open to selective freelance projects.",
     },
     {
       label: "Tools I live in",
-      body: "Make · Zapier · n8n · HubSpot · Follow Up Boss · Base44 · Claude · ChatGPT · WordPress · Asana.",
+      body: "Make · Zapier · n8n · HubSpot · Follow Up Boss · Base44 · Claude · Remotion · WordPress · Asana.",
     },
   ],
 
