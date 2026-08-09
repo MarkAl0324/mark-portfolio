@@ -45,6 +45,7 @@ function App() {
       <Ribbon />
       <NowSection />
       <ProjectsSection />
+      <ReelsSection />
       <SkillsSection />
       <ExperienceSection />
       <ContactSection />
