@@ -628,6 +628,80 @@ section { padding: 112px 0; position: relative; }
   text-transform: uppercase; color: var(--ink-mute);
 }
 
+/* REELS */
+/* Video tiles need a dark inner surface — thumbnails read as washed-out on the
+   beige canvas, and every clip in the set is itself dark. */
+.reels-blurb {
+  color: var(--ink-soft);
+  font-size: 16px;
+  max-width: 62ch;
+  margin-bottom: 34px;
+}
+.reels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 26px;
+}
+.reel-card { display: block; text-decoration: none; color: inherit; }
+.reel-frame {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  background: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.reel-card:hover .reel-frame,
+.reel-card:focus-visible .reel-frame {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-soft);
+}
+.reel-frame video {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+/* The 16:9 piece spans two columns — a landscape tile in a 9:16 grid collapses to a
+   third the height of its neighbours and the row reads as broken. */
+.reel-card.wide { grid-column: span 2; }
+.reel-card.wide .reel-frame { aspect-ratio: 16 / 9; }
+.reel-dur {
+  position: absolute; right: 8px; bottom: 8px;
+  padding: 2px 8px; border-radius: 999px;
+  background: rgba(0,0,0,0.72); color: #fff;
+  font-family: var(--mono); font-size: 11px;
+}
+.reel-card h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.reel-meta {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 6px;
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.reel-proves {
+  margin-top: 8px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  max-width: 34ch;
+}
+.reels-all {
+  display: inline-block;
+  margin-top: 34px;
+  font-size: 15px;
+  color: var(--accent-deep);
+}
+@media (max-width: 860px) {
+  .reels-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 16px; }
+  .reel-card.wide { grid-column: span 2; }
+}
+
 /* SKILLS */
 .skills {
   background: var(--paper);
