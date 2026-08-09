@@ -202,7 +202,7 @@ const PORTFOLIO = {
     // Set this once mark-reels-site is deployed. While it is null the whole Reels
     // section is skipped — an empty section with broken thumbnails on a live
     // job-hunting portfolio is worse than no section at all.
-    siteUrl: null,
+    siteUrl: "http://localhost:4321",
     items: [
       {
         slug: "medsplus-template-system",
