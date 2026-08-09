@@ -305,7 +305,10 @@ function ReelsSection() {
       document.removeEventListener("visibilitychange", onHide);
       setActive(null);
     };
-  }, []);
+  }, [live]);
+
+  // Nothing to link to yet — render nothing rather than a wall of broken frames.
+  if (!live) return null;
 
   return (
     <section id="reels" className="reels">
