@@ -31,8 +31,8 @@ const PORTFOLIO = {
   nowItems: [
     {
       tag: "Now",
-      title: "Leading MedsPLUS Connect — internal clinical webapp",
-      body: "React + Supabase app centralizing prescription tracking, GLP-1 workflows, and patient management. Continuing to refine authentication, role-based access, and internal messaging modules.",
+      title: "Running social + brand video for MedsPLUS Consulting",
+      body: "A six-template design system for their social channels, now extended into short-form video rendered from code — so a weekly post is a data change rather than a rebuild.",
     },
     {
       tag: "Now",
