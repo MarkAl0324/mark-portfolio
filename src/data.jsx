@@ -199,7 +199,10 @@ const PORTFOLIO = {
     titleEm: "brand video, built in code",
     blurb:
       "Client reels produced in Remotion: React components rendered frame by frame to MP4. The same brand tokens drive the video and the page it sits on.",
-    siteUrl: "https://mark-reels.vercel.app",
+    // Set this once mark-reels-site is deployed. While it is null the whole Reels
+    // section is skipped — an empty section with broken thumbnails on a live
+    // job-hunting portfolio is worse than no section at all.
+    siteUrl: null,
     items: [
       {
         slug: "medsplus-template-system",
