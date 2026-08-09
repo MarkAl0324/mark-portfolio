@@ -104,4 +104,4 @@ function useMousePreview() {
   return { state, onEnter, onMove, onLeave };
 }
 
-Object.assign(window, { Reveal, Nav, SectionHead, useMousePreview });
+Object.assign(window, { Reveal, Nav, SectionHead, useMousePreview, reelsLive });
