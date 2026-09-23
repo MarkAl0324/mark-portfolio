@@ -11,7 +11,7 @@ function Hero() {
         <div className="hero-grid">
           <div className="hero-eyebrow eyebrow">
             <span className="pulse" />
-            <span>Available — Q3 2026 · {P.location}</span>
+            <span>Available now · part-time & freelance · {P.location}</span>
           </div>
           <h1 className="display">
             <span className="hero-line" style={{ animationDelay: "0.05s" }}>
