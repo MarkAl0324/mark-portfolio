@@ -59,17 +59,19 @@ const PORTFOLIO = {
       titleEm: "· Claude skills for live deals",
       year: "2023 – Now",
       type: "Case study",
-      stack: ["Claude Code", "Follow Up Boss", "ZipForms", "DocuSign"],
+      stack: ["Claude Cowork", "Claude Code", "Notion", "DocuSign"],
       desc: "The system behind daily transaction coordination for a San Diego brokerage: Claude skills that track every file, flag what is missing or due, and draft the updates the broker needs.",
       previewLabel: "Transaction tracking",
       image: "images/imaginesd-documents.png",
       gallery: [
-        { src: "images/imaginesd-documents.png", caption: "Documents: deadline, phase and status tracking per transaction" },
+        { src: "images/imaginesd-documents.png", caption: "Documents tracker: status, timeline and deadline for every document on every file (addresses blurred)" },
+        { src: "images/tc-skill-suite.png", caption: "The tc-sync skill: one orchestrator that routes to sub-skills for email, documents, new files and closing" },
+        { src: "images/imaginesd-hub.png", caption: "The Notion hub the agent keeps up to date: transactions, documents, communication log and shift checklists" },
       ],
       caseStudy: {
         problem: "A brokerage usually has several deals open at once, and each one carries a dozen or more dated deadlines across the client, escrow, the lender and the other agent. Checking the status of every file by hand ate hours each week, and one missed contingency date can put a client's deposit at risk.",
         approach: [
-          "Built a set of Claude skills around the daily routine: start-of-day and end-of-day reviews, an inbox scan that matches incoming documents to each file, checklist updates, new-file setup and closing",
+          "Built a set of Claude skills around the daily routine: start-of-day and end-of-day reviews, an inbox scan that matches incoming documents to each file, checklist updates, new-file setup and closing, all written back to one Notion hub",
           "Wrote the rules the skills follow: calendar versus business-day deadline math, a fixed document status vocabulary, and a hard stop on any email carrying wire instructions",
           "Drafted broker updates that carry only deadlines, changes and items that need action, so a status check takes seconds",
         ],
@@ -96,8 +98,7 @@ const PORTFOLIO = {
       previewLabel: "CRM dashboard",
       image: "images/imaginesd-pipelines.png",
       gallery: [
-        { src: "images/imaginesd-pipelines.png", caption: "Pipelines: lead stages from New Lead through Offer Submitted" },
-        { src: "images/imaginesd-hub.png", caption: "Transaction Management hub: the central home for active files" },
+        { src: "images/imaginesd-pipelines.png", caption: "Pipelines: lead stages from New Lead through Offer Submitted (deal details blurred)" },
       ],
       caseStudy: {
         problem: "The ImagineSD team was juggling Luxury Presence, SIDE Okta, Follow Up Boss, and other tools with no single view of leads, clients or transactions. Handoffs leaked, and follow-up discipline was hard to keep up.",
@@ -250,7 +251,6 @@ const PORTFOLIO = {
       type: "AI system",
       stack: ["Claude Code", "Cowork", "MCP"],
       desc: "About 40 skills across Claude Code and Cowork, with scheduled tasks, memory files and connectors to Google Workspace, Notion, Supabase and Hunter. It runs prioritization, drafting and reporting across several client engagements from one git-tracked, backed-up source.",
-      image: "images/aira-skill.png",
     },
     {
       num: "09",
@@ -261,7 +261,7 @@ const PORTFOLIO = {
       type: "Web + SEO",
       stack: ["WordPress", "Analytics", "SEMrush"],
       desc: "Rebuilt and optimized the MedsPLUS site for usability and lead generation: 35% longer average sessions and 20% more lead form conversions.",
-      image: "images/medsplus-website.png",
+      image: "images/medsplus-website.jpg",
     },
   ],
 
