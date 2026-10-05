@@ -59,9 +59,9 @@ function Nav({ onToggleTweaks }) {
   }, []);
   return (
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
-      <a href="#top" className="nav-brand">
-        <span className="dot" />
-        <span>MA · ops + automation</span>
+      <a href="#top" className="nav-brand" aria-label="Mark Alejandro, back to top">
+        <span className="mark" aria-hidden="true">MA</span>
+        <span>Mark Alejandro <span className="sub">· ops + automation</span></span>
       </a>
       <div className="nav-links">
         <a href="#now">Now</a>
@@ -79,9 +79,9 @@ function Nav({ onToggleTweaks }) {
 function SectionHead({ num, kicker, title, titleEm }) {
   return (
     <Reveal className="section-head">
-      <div>
-        <div className="num">{num}</div>
-        <div className="eyebrow" style={{ marginTop: 8 }}>{kicker}</div>
+      <div className="kicker">
+        <span className="num">{num}</span>
+        <span className="eyebrow">{kicker}</span>
       </div>
       <h2>
         {title}
@@ -91,17 +91,4 @@ function SectionHead({ num, kicker, title, titleEm }) {
   );
 }
 
-// Hover-follow project preview card
-function useMousePreview() {
-  const [state, setState] = useState({ show: false, x: 0, y: 0, project: null });
-  const onEnter = (project) => (e) => {
-    setState({ show: true, x: e.clientX, y: e.clientY, project });
-  };
-  const onMove = (e) => {
-    setState((s) => (s.show ? { ...s, x: e.clientX, y: e.clientY } : s));
-  };
-  const onLeave = () => setState((s) => ({ ...s, show: false }));
-  return { state, onEnter, onMove, onLeave };
-}
-
-Object.assign(window, { Reveal, Nav, SectionHead, useMousePreview, reelsLive });
+Object.assign(window, { Reveal, Nav, SectionHead, reelsLive });

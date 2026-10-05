@@ -1,4 +1,4 @@
-// Portfolio content: Mark Al S. Alejandro (updated 2026-09-24)
+// Portfolio content: Mark Al S. Alejandro (updated 2026-10-06)
 const PORTFOLIO = {
   name: "Mark Al S. Alejandro",
   role: "Operations Integrator",
@@ -7,6 +7,8 @@ const PORTFOLIO = {
   email: "markalejandro1115@gmail.com",
   phone: "+63 945 459 3273",
   timeZone: "UTC+8 · Asia / Manila",
+  // Shown on the Now section. Change it whenever the Now list changes.
+  nowUpdated: "October 2026",
 
   taglineLines: [
     { text: "I find the inefficiency.", italic: false },
@@ -20,7 +22,7 @@ const PORTFOLIO = {
     },
     {
       label: "Currently",
-      body: "Transaction coordination for Imagine SD, a San Diego brokerage. Executive and operations support for a US founder running four ventures. Open to part-time and freelance work.",
+      body: "Operations support for Imagine SD, a San Diego brokerage. Transaction coordination picks back up with the next deal. Social and brand video for MedsPLUS. Building Eudomia, my own organization of AI agents. Open to part-time and freelance work.",
     },
     {
       label: "Tools I live in",
@@ -30,14 +32,19 @@ const PORTFOLIO = {
 
   nowItems: [
     {
-      tag: "Now",
-      title: "Executive and operations support for a US founder",
-      body: "EA and operations work for a founder running four small businesses. Every day I find and vet wholesale buyers for her golf apparel brand, verify their emails and leave drafts in her Gmail, and I'm building the CRM her sales team will work from.",
+      tag: "Building",
+      title: "Eudomia, an AI organization that runs my work",
+      body: "About 25 AI agents in departments such as marketing, creative, sales, operations, product and compliance. A manager agent reviews each task before it reaches me. They draft, I decide, and nothing is sent, posted or published without my approval.",
     },
     {
       tag: "Now",
-      title: "Coordinating live transactions for Imagine SD",
-      body: "Daily transaction coordination for a San Diego brokerage: deadlines, disclosures and document flow from contract to close, backed by the Claude workflow and CRM dashboard I built for the team.",
+      title: "Operations support for Imagine SD",
+      body: "I support a San Diego brokerage beyond the deal desk: a new website in progress, a federal-bid monitor and the CRM dashboard I built for the team. Transaction coordination is on hold until the next deal. The Claude workflow I built for it is ready for the next file.",
+    },
+    {
+      tag: "Now",
+      title: "Social and brand video for MedsPLUS",
+      body: "I write captions, build the branded posts and schedule them once the client approves. I also build their recap videos in code from the same brand templates.",
     },
     {
       tag: "Testing",
@@ -51,22 +58,24 @@ const PORTFOLIO = {
     },
   ],
 
+  // Every project carries a gallery. All images are 1600x1000 (16:10) on the same dark
+  // stage, so the showcase shows them at one size with nothing cropped. The first
+  // gallery image is the card picture.
   projects: [
     {
       num: "01",
       featured: true,
       title: "Transaction coordination system",
-      titleEm: "· Claude skills for live deals",
-      year: "2023 – Now",
+      titleEm: "· Claude skills for deal files",
+      year: "2026",
       type: "Case study",
       stack: ["Claude Cowork", "Claude Code", "Notion", "DocuSign"],
-      desc: "The system behind daily transaction coordination for a San Diego brokerage: Claude skills that track every file, flag what is missing or due, and draft the updates the broker needs.",
-      previewLabel: "Transaction tracking",
-      image: "images/imaginesd-documents.png",
+      desc: "The system I built for transaction coordination at a San Diego brokerage: Claude skills that track every file, flag what is missing or due, and draft the updates the broker needs. It is on hold until the next deal.",
       gallery: [
-        { src: "images/imaginesd-documents.png", caption: "Documents tracker: status, timeline and deadline for every document on every file (addresses blurred)" },
-        { src: "images/tc-skill-suite.png", caption: "The tc-sync skill: one orchestrator that routes to sub-skills for email, documents, new files and closing" },
-        { src: "images/imaginesd-hub.png", caption: "The Notion hub the agent keeps up to date: transactions, documents, communication log and shift checklists" },
+        { src: "images/tc-documents-tracker-v2.png", caption: "Documents tracker: status, timeline and deadline for every document on a file (transaction column blurred)" },
+        { src: "images/tc-skills-suite.png", caption: "The eight tc skills in the project's skills folder: start of day, end of day, new file, document update, email check, log, agent message, close" },
+        { src: "images/tc-dashboard.png", caption: "The TC dashboard as it stands now: no active transactions, ready for the next deal" },
+        { src: "images/tc-notion-hub-v2.png", caption: "The Notion hub the agent keeps up to date (April 2026 version)" },
       ],
       caseStudy: {
         problem: "A brokerage usually has several deals open at once, and each one carries a dozen or more dated deadlines across the client, escrow, the lender and the other agent. Checking the status of every file by hand ate hours each week, and one missed contingency date can put a client's deposit at risk.",
@@ -76,18 +85,48 @@ const PORTFOLIO = {
           "Drafted broker updates that carry only deadlines, changes and items that need action, so a status check takes seconds",
         ],
         outcome: [
-          "Manual status checking cut by about 50%, roughly 1.5 hours a day",
+          "Cut manual status checking by about 50% on active files, roughly 1.5 hours a day (my estimate)",
           "Missing documents and deadline risks surface before they are due, not after",
           "Every active file has one written status that anyone on the team can read",
         ],
         metrics: [
           { num: "~50%", label: "Less manual status checking" },
-          { num: "1.5h", label: "Saved per day" },
+          { num: "1.5h", label: "Saved per day with deals open" },
         ],
       },
     },
     {
       num: "02",
+      featured: true,
+      title: "Eudomia",
+      titleEm: "· an AI organization that runs my work",
+      year: "2026 – Now",
+      type: "AI system",
+      stack: ["Claude Code", "Paperclip", "Agent skills"],
+      desc: "An organization of AI agents that runs my client and venture work: departments for marketing, creative, sales, operations, product and compliance, each with a manager agent that reviews every task. The agents draft. I decide and send.",
+      gallery: [
+        { src: "images/eudomia-paperclip-board.png", caption: "Paperclip board: agents at work, task and run charts (task titles naming a partner blurred)" },
+      ],
+      caseStudy: {
+        problem: "I run client work and my own ventures alone. The work that cuts across them, like copy, design, research and review, had no natural home, and every piece of it came back to me.",
+        approach: [
+          "Set up departments with a manager agent each, and specialists that serve every client instead of one project",
+          "Gave every agent the same house rules: read the client's context first, draft only, and never send, post, push or pay. I do the sending",
+          "Made the manager review each finished task against what I originally asked for before it reaches me. Regulated work goes through a compliance check first",
+          "Added a daily context page that tells every agent what is paused or stopped, and a weekly review that turns repeated mistakes into lessons I approve",
+        ],
+        outcome: [
+          "Client and venture work runs through one structure, with the same rules for every agent",
+          "Nothing is sent, posted, pushed or paid for without my approval",
+          "Work I put on hold stays on hold: the daily context page carries it to every agent",
+        ],
+        metrics: [
+          { num: "25", label: "Agents in departments" },
+        ],
+      },
+    },
+    {
+      num: "03",
       featured: true,
       title: "ImagineSD CRM Dashboard",
       titleEm: "· a Base44 rebuild",
@@ -95,10 +134,8 @@ const PORTFOLIO = {
       type: "Case study",
       stack: ["Base44", "Follow Up Boss", "Luxury Presence"],
       desc: "A custom internal CRM dashboard for a San Diego real estate team, replacing a fragmented stack with one place for lead, client, and transaction tracking.",
-      previewLabel: "CRM dashboard",
-      image: "images/imaginesd-pipelines.png",
       gallery: [
-        { src: "images/imaginesd-pipelines.png", caption: "Pipelines: lead stages from New Lead through Offer Submitted (deal details blurred)" },
+        { src: "images/crm-pipelines-v2.png", caption: "Pipelines: lead stages from New Lead onward (deal value and card blurred)" },
       ],
       caseStudy: {
         problem: "The ImagineSD team was juggling Luxury Presence, SIDE Okta, Follow Up Boss, and other tools with no single view of leads, clients or transactions. Handoffs leaked, and follow-up discipline was hard to keep up.",
@@ -119,7 +156,7 @@ const PORTFOLIO = {
       },
     },
     {
-      num: "03",
+      num: "04",
       featured: true,
       title: "MedsPLUS Connect",
       titleEm: "· internal clinical webapp",
@@ -127,11 +164,9 @@ const PORTFOLIO = {
       type: "Case study",
       stack: ["React", "Supabase", "HubSpot"],
       desc: "A React + Supabase webapp that brings pharmacy workflows, GLP-1 program tracking, genomics data and patient management into one place for a pharmacist-led healthcare company.",
-      previewLabel: "Internal webapp",
-      image: "images/medsplus-command-center.png",
       gallery: [
-        { src: "images/medsplus-command-center.png", caption: "Command Center: overview of pharmacy, GLP-1, genomics and education modules" },
-        { src: "images/medsplus-pharmacy.png", caption: "Pharmacy Dashboard: prescription status, cost avoidance, refill distribution" },
+        { src: "images/meds-connect-command-center-v2.png", caption: "Command Center: pharmacy, GLP-1, genomics and education modules" },
+        { src: "images/meds-connect-pharmacy-v2.png", caption: "Pharmacy Dashboard: prescription status, cost avoidance, refill distribution" },
       ],
       caseStudy: {
         problem: "A team of under ten was running community health programs, pharmacy services and grant-funded projects across at least four tools that didn't talk to each other: deliveries in one platform, leads in HubSpot, refills in a separate app, and SOPs and messages spread across more. The same details were entered more than once, and the links between tools lived in people's heads, which is a real risk on a team that small.",
@@ -153,20 +188,18 @@ const PORTFOLIO = {
       },
     },
     {
-      num: "04",
+      num: "05",
       featured: true,
       title: "MedsPLUS social design system",
       titleEm: "· six templates, one brand",
-      year: "2025 – 2026",
+      year: "2026",
       type: "Case study",
       stack: ["Design system", "Claude Design", "Remotion"],
       desc: "A reusable pubmat system for a healthcare brand's social channels: six locked templates with swappable slots, so a new post is a slot change rather than a new design.",
-      previewLabel: "Social design system",
-      image: "images/medsplus-social-wall.jpg",
       gallery: [
-        { src: "images/medsplus-social-wall.jpg", caption: "Two months of published posts, one brand system across every one" },
-        { src: "images/medsplus-template-dark.png", caption: "Wellness Friday: Dark Spotlight master, slots bracketed for reuse" },
-        { src: "images/medsplus-template-cream.png", caption: "Wellness Friday: Editorial Cream, the paired light variant" },
+        { src: "images/meds-social-wall.jpg", caption: "Eight published posts from the template system" },
+        { src: "images/meds-social-template-dark.png", caption: "Wellness Friday: Dark Spotlight master" },
+        { src: "images/meds-social-template-cream.png", caption: "Wellness Friday: Editorial Cream, the paired light variant" },
       ],
       caseStudy: {
         problem: "Weekly social graphics were being designed one at a time. Output looked inconsistent post to post, and every new asset cost a full design cycle even when only the date and headline changed.",
@@ -188,7 +221,7 @@ const PORTFOLIO = {
       },
     },
     {
-      num: "05",
+      num: "06",
       featured: true,
       title: "Short-form brand video",
       titleEm: "· built in code",
@@ -196,12 +229,10 @@ const PORTFOLIO = {
       type: "Case study",
       stack: ["Remotion", "React", "TypeScript"],
       desc: "Client reels produced as React components rendered frame by frame to MP4. A new cut is a data change, and one source ships every aspect ratio.",
-      previewLabel: "Programmatic video",
-      image: "images/reels-three-ratios.jpg",
       gallery: [
-        { src: "images/reels-three-ratios.jpg", caption: "One component rendered live at 9:16, 1:1 and 16:9, in sync" },
-        { src: "images/reels-neighborhoods.jpg", caption: "Imagine SD neighborhood spotlight: photo motion with animated captions" },
-        { src: "images/reels-cashflow.jpg", caption: "CashFLOW: animated data visualisation" },
+        { src: "images/reels-frames.jpg", caption: "Imagine SD neighborhood spotlight and MedsPLUS Wellness Friday, frames rendered from the project" },
+        { src: "images/reels-cashflow-chart.jpg", caption: "CashFLOW: animated bars and line chart, frames rendered from the Remotion project" },
+        { src: "images/reels-one-source-code.png", caption: "The same data file drives every format" },
       ],
       caseStudy: {
         problem: "Short-form video is the format clients ask for most and the slowest to produce by hand. Every platform wants a different aspect ratio, and every re-cut means going back into a timeline.",
@@ -218,22 +249,25 @@ const PORTFOLIO = {
         ],
         metrics: [
           { num: "3", label: "Aspect ratios, one source" },
-          { num: "5", label: "Pieces shipped" },
+          { num: "8", label: "Pieces built" },
         ],
       },
     },
     {
-      num: "06",
+      num: "07",
       featured: false,
       title: "Wholesale lead pipeline + CRM",
       titleEm: "",
-      year: "2026",
+      year: "Sep 2026",
       type: "AI workflow",
       stack: ["Claude agents", "Hunter", "Supabase"],
-      desc: "A daily pipeline for a golf apparel brand: Claude agents find and vet wholesale buyers, verify emails through Hunter and leave ready-to-send drafts in the owner's Gmail. It feeds a Supabase CRM being built to replace the sales spreadsheet.",
+      desc: "Claude agents that found and vetted wholesale buyers for a golf apparel brand, verified emails through Hunter and left ready-to-send drafts for the owner to review. I also started a Supabase CRM to replace the sales spreadsheet. The engagement ended in September 2026.",
+      gallery: [
+        { src: "images/wholesale-pipeline-outline.png", caption: "Outline of the workflow, redrawn with no client data" },
+      ],
     },
     {
-      num: "07",
+      num: "08",
       featured: false,
       title: "GovCon bid pipeline",
       titleEm: "",
@@ -241,9 +275,12 @@ const PORTFOLIO = {
       type: "Internal tool",
       stack: ["SAM.gov", "AI scoring", "Pipeline"],
       desc: "Screens federal contract listings against a company's qualification gates, then carries the ones worth chasing through intake, approvals and award. Now in user testing.",
+      gallery: [
+        { src: "images/govcon-pipeline-board.png", caption: "GovCon Hub pipeline board in its demo workspace (fictional pursuits and names), with the stage gate for one pursuit" },
+      ],
     },
     {
-      num: "08",
+      num: "09",
       featured: false,
       title: "AIRA: my own Claude operating system",
       titleEm: "",
@@ -251,9 +288,12 @@ const PORTFOLIO = {
       type: "AI system",
       stack: ["Claude Code", "Cowork", "MCP"],
       desc: "About 40 skills across Claude Code and Cowork, with scheduled tasks, memory files and connectors to Google Workspace, Notion, Supabase and Hunter. It runs prioritization, drafting and reporting across several client engagements from one git-tracked, backed-up source.",
+      gallery: [
+        { src: "images/aira-skills-folder.png", caption: "A selection of the skills in the git-tracked skills folder" },
+      ],
     },
     {
-      num: "09",
+      num: "10",
       featured: false,
       title: "MedsPLUS website rebuild",
       titleEm: "",
@@ -261,7 +301,9 @@ const PORTFOLIO = {
       type: "Web + SEO",
       stack: ["WordPress", "Analytics", "SEMrush"],
       desc: "Rebuilt and optimized the MedsPLUS site for usability and lead generation: 35% longer average sessions and 20% more lead form conversions.",
-      image: "images/medsplus-website.jpg",
+      gallery: [
+        { src: "images/meds-website-home.jpg", caption: "Rebuilt homepage hero" },
+      ],
     },
   ],
 
@@ -274,6 +316,7 @@ const PORTFOLIO = {
         { name: "Claude · ChatGPT · Notion AI", level: "Daily" },
         { name: "Prompt engineering", level: "Daily" },
         { name: "Workflow design", level: "Daily" },
+        { name: "Multi-agent systems · Claude Code · Paperclip", level: "Daily" },
         { name: "Basic API & integration logic", level: "Often" },
       ],
     },
@@ -360,37 +403,39 @@ const PORTFOLIO = {
 
   experience: [
     {
-      when: "Sep 2026 – Now",
+      when: "Sep 2026",
       role: "Executive & Operations Support (freelance)",
-      at: "US founder · golf apparel brand + three ventures",
-      body: "EA and operations support for a founder running four small businesses, starting with wholesale sales for her golf apparel brand.",
+      at: "US founder · golf apparel brand",
+      body: "Executive and operations support for a founder running four small businesses. I started with wholesale sales for the golf apparel brand.",
       bullets: [
-        "Run a daily research routine that finds and qualifies wholesale buyers, verifies their emails and leaves ready-to-send drafts in her Gmail",
-        "Building an internal CRM to replace the spreadsheet the sales team works from, shared by both co-owners",
+        "Ran a research routine that found and qualified wholesale buyers, verified their emails and left ready-to-send drafts for the founder to review",
+        "Started an internal CRM on Supabase to replace the spreadsheet the sales team works from",
       ],
     },
     {
       when: "Oct 2023 – Now",
       role: "Transaction Coordinator & Operations Support",
       at: "ImagineSD",
-      body: "Coordinate residential deals from signed contract to close for a San Diego brokerage, and support the team's CRM, marketing and back office.",
+      body: "Coordinate residential deals from signed contract to close for a San Diego brokerage, and support the team's CRM, marketing and back office. Transaction coordination is on hold until the next deal.",
       bullets: [
-        "Track every contingency, escrow and disclosure deadline across active files and keep the broker updated on what needs him",
+        "On every open deal, track each contingency, escrow and disclosure deadline and keep the broker updated on what needs him",
         "Prepare offers and addendums in ZipForms, route signatures through DocuSign and file in Brokermint",
         "Own the Follow Up Boss CRM: database clean-up, lead follow-up, routing and KPI reporting",
         "Built a custom Base44 dashboard that replaced Monday.com, adopted by the team within two weeks at about 30% lower platform cost",
         "Built a Claude workflow that cut manual status checks by about 50%",
+        "Building the brokerage's new website and a federal-bid monitor",
       ],
     },
     {
-      when: "Aug 2026 – Sep 2026",
+      when: "Aug 2026 – Now",
       role: "Product, Social & Brand Video",
       at: "MedsPLUS Consulting",
-      body: "Continued engagement after the business development role, covering MedsPLUS Connect, the social design system and the brand video built on top of it.",
+      body: "Continued engagement after the business development role, covering the social design system, the brand video built on top of it and day-to-day social posting.",
       bullets: [
         "Maintained MedsPLUS Connect, the internal clinical webapp",
         "Built a six-template pubmat system so a new post is a slot swap, not a new design",
         "Extended the system into short-form video rendered from code, in the same brand tokens",
+        "Write captions, build the branded posts and schedule them once the client approves",
       ],
     },
     {

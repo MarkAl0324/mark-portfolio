@@ -4,7 +4,7 @@ const THEMES = [
   {
     id: "warm-editorial",
     label: "Warm Editorial",
-    chips: ["#f4ede2", "#c86e3d", "#1f1a15"],
+    chips: ["#f6f3ee", "#b85a35", "#17150f"],
   },
   {
     id: "paper-journal",

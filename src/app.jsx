@@ -14,7 +14,7 @@ function App() {
     // Override accent hue dynamically
     const h = tweaks.accentHue;
     const themeTuned = {
-      "warm-editorial": { l: 0.62, c: 0.12, lDeep: 0.45, lSoft: 0.92 },
+      "warm-editorial": { l: 0.58, c: 0.14, lDeep: 0.45, lSoft: 0.94 },
       "paper-journal":  { l: 0.55, c: 0.13, lDeep: 0.4,  lSoft: 0.92 },
       "ink-sand":       { l: 0.35, c: 0.10, lDeep: 0.22, lSoft: 0.85 },
     }[tweaks.theme] || { l: 0.6, c: 0.12, lDeep: 0.45, lSoft: 0.92 };
